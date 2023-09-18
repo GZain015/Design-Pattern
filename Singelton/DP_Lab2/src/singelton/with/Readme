@@ -1,0 +1,14 @@
+Singelton:
+A Singleton is a design pattern that restricts the instantiation of a class to a single instance and provides a global point of access to that instance
+
+
+Problem Statement:
+    Implement a Singleton billing system for an e-commerce application. Ensure that only one instance is responsible for calculating and processing invoices.
+
+This system implements singelton lazy initializaion and double check locking in billingSystem class to create a single instance only.
+
+It has methods for generating invoices and printing the list of generated invoices.
+
+The Invoice class is a private inner class used to represent individual invoices with customer names and amounts.
+
+In the DP_lab2 class, we demonstrate how to access the Singleton BillingSystem instance and use it to generate invoices and print them.

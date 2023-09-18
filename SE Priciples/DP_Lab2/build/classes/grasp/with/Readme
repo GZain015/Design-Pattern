@@ -1,0 +1,16 @@
+Problem Statement:
+    Create a University portal that is build using the GRASP principles by maintaining low coupling, high cohesion.
+
+I this package a simple university portal is implemented using the grasp concepts of creator, information expert, polymorphism.
+
+In this portal there are total 5 classes including main class, and their functionalities are:
+
+Information Expert: The Course class is responsible for managing course details and enrollment, and the Student class is responsible for managing student details and enrollment in courses. Each class has the most information about its respective domain.
+
+Low Coupling and High Cohesion: The separation of concerns is evident through the Portal interface, which allows different functionalities to be implemented independently of the UniversityPortal class. This demonstrates low coupling and high cohesion.
+
+Creator: The UniversityPortal class is responsible for creating instances of Student and Course objects, demonstrating the Creator principle.
+
+Controller: The UniversityPortal class acts as a controller, handling system events related to the university portal, such as viewing courses, enrolling students, viewing enrolled courses, and removing courses.
+
+Polymorphism: The UniversityPortal class implements the Portal interface, showcasing polymorphism as different portal functionalities can be used interchangeably.
