@@ -11,5 +11,6 @@ package decorator.simple;
  */
 public interface Shape {
    void draw();
+   double getPrice();
 }
 

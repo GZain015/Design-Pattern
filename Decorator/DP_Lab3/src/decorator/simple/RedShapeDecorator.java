@@ -11,8 +11,8 @@ package decorator.simple;
  */
 public class RedShapeDecorator extends ShapeDecorator {
 
-   public RedShapeDecorator(Shape decoratedShape) {
-      super(decoratedShape);		
+   public RedShapeDecorator(Shape decoratedShape, double price) {
+      super(decoratedShape, price);		
    }
 
    @Override
