@@ -6,7 +6,7 @@
 package observer.eventsManagement;
 
 import java.io.File;
-import static java.lang.System.err;
+
 
 /**
  *
@@ -15,35 +15,34 @@ import static java.lang.System.err;
 
 public class SMSSupportListener implements EventListener{
     
-    private String sms;
-    private String email;
-    int smsSize;
+    private String phoneNumber;
     
-    public SMSSupportListener(EmailNotificationListener email, String mail) {
-       this.email = mail;
-       String sms = email.toString();
-       
+    public SMSSupportListener(String phoneNumber) {
+       this.phoneNumber = phoneNumber;  
     }
     
     
     @Override
-    public void update(String eventType, File file) {
-       smsSize = 160;
-//       char smsArry [] = sms.toCharArray();
-//       if(sms > smsSize){
-       if(true){
-//           System.out.print("Please define a valid defauld sms...");
-//           System.out.print(
-                    try{
-//                       sms.length();
-                    }
-                    catch(Exception err){
-                        System.out.print("Please define a valid defauld sms...");
-                    }
-       }
-       else{
-           System.out.println("Email to " + email + ": Someone has performed " + eventType + " operation with the following file: " + file.getName());
-       }
+//    public void update(String eventType, File file){
+    public void update(String eventType, Object file){
+       if("sms".equals(eventType)){
+//           String message = (String) file;
+            SMSData smsData = (SMSData) file;
+            String message = smsData.getMessage();
+           
+            if(message.length() > 160){
+               System.out.println("Warning: Default SMS length is too long. Please define a valid default SMS.");
+            }
+            else{
+                sendSMS(message, phoneNumber);
+            }
+        }
+    }
+    
+    private void sendSMS(String message, String phoneNumber) {
+        // Implement the logic to send an SMS here.
+        // You can use a third-party SMS gateway or any other method
+        System.out.println("Sending SMS to " + phoneNumber + ": " + message);
     }
     
 }
