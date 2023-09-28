@@ -76,5 +76,7 @@ public class Logger_Main {
    
       loggerChain2.logOnceMessage(AbstractLogger.WARNING, 
          "Warning while loging to the database.");
+      
+      
    }
 }
