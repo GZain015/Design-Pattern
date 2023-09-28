@@ -16,6 +16,10 @@ public class CodecFactory {
             System.out.println("CodecFactory: extracting mpeg audio...");
             return new MPEG4CompressionCodec();
         }
+        else if(type.equals("avi")){
+            System.out.println("CodecFactory: extracting avi audio...");
+            return new AVICompressionCodec();
+        }
         else {
             System.out.println("CodecFactory: extracting ogg audio...");
             return new OggCompressionCodec();

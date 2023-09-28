@@ -17,6 +17,9 @@ public class Facade_Main {
     public static void main(String[] args) {
         VideoConversionFacade converter = new VideoConversionFacade();
         File mp4Video = converter.convertVideo("youtubevideo.ogg", "mp4");
-        // ...
+        System.out.println("");
+        File aviVideo = converter.convertVideo("youtubevideo.mp4", "avi");
+        System.out.println("");
+        File oggVideo = converter.convertVideo("youtubevideo.avi", "ogg");
     }
 }

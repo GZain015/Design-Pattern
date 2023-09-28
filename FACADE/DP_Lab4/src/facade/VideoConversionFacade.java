@@ -21,6 +21,8 @@ public class VideoConversionFacade {
         Codec destinationCodec;
         if (format.equals("mp4")) {
             destinationCodec = new MPEG4CompressionCodec();
+        } else if (format.equals("avi")){
+            destinationCodec = new AVICompressionCodec();
         } else {
             destinationCodec = new OggCompressionCodec();
         }
