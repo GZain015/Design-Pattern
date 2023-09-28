@@ -28,8 +28,13 @@ public abstract class AbstractLogger {
       if(this.level <= level){
          write(message);
       }
+//      else
       if(nextLogger !=null){
          nextLogger.logMessage(level, message);
+      }
+      else{
+//          System.out.println("No Support for "+ level +"logger...");
+          System.out.println("No Support for this logger...");
       }
     }
 
