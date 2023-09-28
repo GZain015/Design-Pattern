@@ -28,13 +28,23 @@ public abstract class AbstractLogger {
       if(this.level <= level){
          write(message);
       }
-//      else
+      if(nextLogger !=null){
+         nextLogger.logMessage(level, message);
+      }
+    }
+    
+    public void logOnceMessage(int level, String message){
+      if(this.level <= level){
+         write(message);
+      }
+//      if(nextLogger !=null){
+      else 
       if(nextLogger !=null){
          nextLogger.logMessage(level, message);
       }
       else{
 //          System.out.println("No Support for "+ level +"logger...");
-          System.out.println("No Support for this logger...");
+          System.out.println("No Support Available for this logger.....");
       }
     }
 
