@@ -64,6 +64,9 @@ public class Logger_Main {
       loggerChain2.logMessage(AbstractLogger.INFO, 
          "This is an information.");
 
+      loggerChain2.logMessage(AbstractLogger.DEBUG, 
+         "This is an debug level information.");
+
       loggerChain2.logMessage(AbstractLogger.ERROR, 
          "This is an error information.");
    
