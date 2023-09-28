@@ -36,7 +36,8 @@ public class EventManager {
         users.remove(listener);
     }
     
-    public void notify(String eventType, File file){
+//    public void notify(String eventType, File file){
+    public void notify(String eventType, Object file){
         List<EventListener> users = listeners.get(eventType);
         for(EventListener listener : users){
             listener.update(eventType, file);

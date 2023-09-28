@@ -16,10 +16,11 @@ import java.io.File;
 
 public class Editor {
     public EventManager events;
-    private File file;
+//    private File file;
+    private Object file;
     
     public Editor(){
-        this.events = new EventManager("open", "save");
+        this.events = new EventManager("open", "save", "sms");
     }
     
     public void openFile(String filePath){
@@ -31,7 +32,12 @@ public class Editor {
         if(this.file != null){
            events.notify("save", file); 
         }else{
-            throw new Exception("Please opne a file first.");
+            throw new Exception("Please open a file first.");
         }
     }
+
+    public void sendSMS(String message, String phoneNumber) {
+        events.notify("sms", new SMSData(message, phoneNumber));
+    }
+    
 }

@@ -13,27 +13,27 @@ package observer.eventsManagement;
 import observer.eventsManagement.Editor;
 import observer.eventsManagement.EmailNotificationListener;
 import observer.eventsManagement.LogOpenListener;
+import observer.eventsManagement.SMSSupportListener;
+
 
 public class ObserverMain {
     public static void main(String [] args){
         Editor editor = new Editor();
-        EmailNotificationListener email = new EmailNotificationListener("admin@example.com");
-        SMSSupportListener sms = new SMSSupportListener(email, "admin@example.com");
-
-//        SMSSupportListener sms = new SMSSupportListener();
         
-
         editor.events.subscribe("open", new LogOpenListener("/path/to/log/file.txt"));
-        editor.events.subscribe("save", sms);
-//        editor.events.subscribe("save", new EmailNotificationListener("admin@example.com"));
+        editor.events.subscribe("save", new EmailNotificationListener("admin@example.com"));
+        editor.events.subscribe("sms", new SMSSupportListener("03160228707"));
         
         
 
         try {
             editor.openFile("test.txt");
             editor.saveFile();
+            editor.sendSMS("File has been created.","03160227807");
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 }
+
+
