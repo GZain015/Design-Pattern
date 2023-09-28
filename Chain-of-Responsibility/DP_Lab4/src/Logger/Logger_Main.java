@@ -30,7 +30,7 @@ public class Logger_Main {
      
    }
     
-   private static AbstractLogger getChainOfLoggers2(){
+   private static AbstractLogger getChainOfLoggersOnce(){
        
       AbstractLogger errorLogger1 = new ErrorLogger(AbstractLogger.ERROR);
       AbstractLogger databaseLogger1 = new DatabaseLogger(AbstractLogger.WARNING);
@@ -44,6 +44,9 @@ public class Logger_Main {
 
    public static void main(String[] args) {
       AbstractLogger loggerChain = getChainOfLoggers();
+      
+      
+      AbstractLogger loggerChain2 = getChainOfLoggersOnce();
 
       loggerChain.logMessage(AbstractLogger.INFO, 
          "This is an information.");
@@ -59,7 +62,7 @@ public class Logger_Main {
       
       System.out.println();
       
-      AbstractLogger loggerChain2 = getChainOfLoggers2();
+     
 
       loggerChain2.logMessage(AbstractLogger.INFO, 
          "This is an information.");
@@ -67,7 +70,7 @@ public class Logger_Main {
       loggerChain2.logMessage(AbstractLogger.ERROR, 
          "This is an error information.");
    
-      loggerChain.logMessage(AbstractLogger.WARNING, 
+      loggerChain2.logMessage(AbstractLogger.WARNING, 
          "Warning while loging to the database.");
    }
 }

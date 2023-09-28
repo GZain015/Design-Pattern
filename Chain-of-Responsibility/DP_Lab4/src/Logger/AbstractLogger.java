@@ -32,6 +32,19 @@ public abstract class AbstractLogger {
          nextLogger.logMessage(level, message);
       }
     }
+    
+    public void logMessageOnce(int level, String message){
+      if(this.level <= level){
+         write(message);
+      }
+//      if(nextLogger !=null){
+      else if(nextLogger !=null){
+         nextLogger.logMessageOnce(level, message);
+      }
+      else{
+          System.out.println("No Support Available");
+      }
+    }
 
     abstract protected void write(String message);
 }
