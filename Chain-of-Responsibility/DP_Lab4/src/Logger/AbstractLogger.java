@@ -34,7 +34,7 @@ public abstract class AbstractLogger {
     }
     
     public void logMessageOnce(int level, String message){
-      if(this.level <= level){
+      if(this.level == level){
          write(message);
       }
 //      if(nextLogger !=null){
@@ -42,7 +42,7 @@ public abstract class AbstractLogger {
          nextLogger.logMessageOnce(level, message);
       }
       else{
-          System.out.println("No Support Available");
+          System.out.println("No Support Available...");
       }
     }
 

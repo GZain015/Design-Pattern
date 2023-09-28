@@ -64,13 +64,16 @@ public class Logger_Main {
       
      
 
-      loggerChain2.logMessage(AbstractLogger.INFO, 
+      loggerChain2.logMessageOnce(AbstractLogger.INFO, 
          "This is an information.");
+      
+      loggerChain2.logMessageOnce(AbstractLogger.DEBUG, 
+         "This is an debug level information.");
 
-      loggerChain2.logMessage(AbstractLogger.ERROR, 
+      loggerChain2.logMessageOnce(AbstractLogger.ERROR, 
          "This is an error information.");
    
-      loggerChain2.logMessage(AbstractLogger.WARNING, 
+      loggerChain2.logMessageOnce(AbstractLogger.WARNING, 
          "Warning while loging to the database.");
    }
 }
