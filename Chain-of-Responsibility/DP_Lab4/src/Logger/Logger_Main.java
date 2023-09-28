@@ -33,21 +33,24 @@ public class Logger_Main {
    private static AbstractLogger getChainOfLoggersOnce(){
        
       AbstractLogger errorLogger1 = new ErrorLogger(AbstractLogger.ERROR);
+//      AbstractLogger fileLogger = new FileLogger(AbstractLogger.DEBUG);
       AbstractLogger databaseLogger1 = new DatabaseLogger(AbstractLogger.WARNING);
       AbstractLogger consoleLogger1 = new ConsoleLogger(AbstractLogger.INFO);
       
-      errorLogger1.setNextLogger(databaseLogger1);
-      databaseLogger1.setNextLogger(consoleLogger1);
+      databaseLogger1.setNextLogger(errorLogger1);
+      errorLogger1.setNextLogger(consoleLogger1);
+//      consoleLogger1.setNextLogger(fileLogger);
        
-      return errorLogger1;
+      return databaseLogger1;
    }
 
    public static void main(String[] args) {
       AbstractLogger loggerChain = getChainOfLoggers();
-      
-      
+            
       AbstractLogger loggerChain2 = getChainOfLoggersOnce();
 
+      
+      
       loggerChain.logMessage(AbstractLogger.INFO, 
          "This is an information.");
 
@@ -61,19 +64,17 @@ public class Logger_Main {
          "Warning while loging to the database.");
       
       System.out.println();
-      
-     
 
-      loggerChain2.logMessageOnce(AbstractLogger.INFO, 
+      loggerChain2.logOnceMessage(AbstractLogger.INFO, 
          "This is an information.");
       
-      loggerChain2.logMessageOnce(AbstractLogger.DEBUG, 
+      loggerChain2.logOnceMessage(AbstractLogger.DEBUG, 
          "This is an debug level information.");
 
-      loggerChain2.logMessageOnce(AbstractLogger.ERROR, 
+      loggerChain2.logOnceMessage(AbstractLogger.ERROR, 
          "This is an error information.");
    
-      loggerChain2.logMessageOnce(AbstractLogger.WARNING, 
+      loggerChain2.logOnceMessage(AbstractLogger.WARNING, 
          "Warning while loging to the database.");
    }
 }
