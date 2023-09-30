@@ -1,7 +1,0 @@
-
-Problem Statement:
-    Implement a billing system for an e-commerce application that doesn't uses singelton. 
-
-This system that doesn't implements singelton in billingSystem class.
-
-It has methods for generating invoices and printing the list of generated invoices.

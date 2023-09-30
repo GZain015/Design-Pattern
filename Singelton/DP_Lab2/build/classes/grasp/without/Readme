@@ -1,6 +1,0 @@
-Problem Statement:
-    Create a University portal that is build without using the GRASP principles.
-
-
-In this package a simple portal is created that just has 3 classes, where students and courses classes depends on main class but 
-doesn't have encapsulation and information hiding.
