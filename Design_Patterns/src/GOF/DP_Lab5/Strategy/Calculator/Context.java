@@ -10,13 +10,18 @@ package GOF.DP_Lab5.Strategy.Calculator;
  * @author FA20-BSE-017
  */
 public class Context {
-   private Strategy strategy;
+    private Computer strategy;
 
-   public Context(Strategy strategy){
-      this.strategy = strategy;
-   }
+    public Context(Computer strategy){
+       this.strategy = strategy;
+    }
 
-   public int executeStrategy(int num1, int num2){
-      return strategy.doOperation(num1, num2);
-   }
+    public int executeStrategy(int num1, int num2){
+       return strategy.doOperation(num1, num2);
+    }
+   
+    public int executeInRange(int num1, int num2){
+       return strategy.ComputeInRange(num1, num2);
+    }
+    
 }

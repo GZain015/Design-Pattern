@@ -19,5 +19,14 @@ public class StrategyMain {
 
         context = new Context(new OperationMultiply());		
         System.out.println("10 * 5 = " + context.executeStrategy(10, 5));
+        
+        context = new Context(new OperationDiv());		
+        System.out.println("10 / 5 = " + context.executeStrategy(10, 5));
+        
+        context = new Context(new OperationPow());		
+        System.out.println("10 ^ 5 = " + context.executeStrategy(10, 5));
+        
+        int executeInRange = context.executeInRange(2, 4);
+        System.out.println(executeInRange);
     }
 }

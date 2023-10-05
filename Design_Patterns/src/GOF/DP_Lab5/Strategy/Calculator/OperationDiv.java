@@ -9,17 +9,17 @@ package GOF.DP_Lab5.Strategy.Calculator;
  *
  * @author FA20-BSE-017
  */
+public class OperationDiv extends Computer{
 
-public class OperationMultiply extends Computer{
-   @Override
-   public int doOperation(int num1, int num2) {
-      return num1 * num2;
-   }
+    @Override
+    public int doOperation(int num1, int num2) {
+        return num1/num2;
+    }
 
   @Override
     public int ComputeInRange(int num1, int num2) {
-        if(num1<= 300 &&  num1>=200 && num2<=300 && num2>=200){
-            return num1 * num2;
+        if(num1<= 400 &&  num1>=300 && num2<=400 && num2>=300){
+            return num1 / num2;
         }
         if(nextStrategy==null){
             System.out.println("Support not available...");
@@ -31,4 +31,5 @@ public class OperationMultiply extends Computer{
         return 0;
         
     }
+    
 }
