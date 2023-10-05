@@ -11,10 +11,17 @@ package GOF.DP_Lab5.Strategy.Calculator;
  */
 
 public class OperationMultiply extends Computer{
-   @Override
-   public int doOperation(int num1, int num2) {
-      return num1 * num2;
-   }
+    
+    public OperationMultiply(){}
+    
+    public OperationMultiply(OperationDiv nextStrategy){
+        this.nextStrategy = nextStrategy;
+    }
+    
+    @Override
+    public int doOperation(int num1, int num2) {
+       return num1 * num2;
+    }
 
   @Override
     public int ComputeInRange(int num1, int num2) {

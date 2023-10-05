@@ -12,9 +12,11 @@ package GOF.DP_Lab5.Strategy.Calculator;
 
 public class OperationAdd extends Computer {
     
-//    public OperationAdd(Computer nextStrategy){
-//        this.nextStrategy = nextStrategy;
-//    }
+    public OperationAdd(){}
+    
+    public OperationAdd(OperationSubstract nextStrategy){
+        this.nextStrategy = nextStrategy;
+    }
     
     @Override
     public int doOperation(int num1, int num2) {

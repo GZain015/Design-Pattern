@@ -11,9 +11,11 @@ package GOF.DP_Lab5.Strategy.Calculator;
  */
 public class OperationSubstract extends Computer{
     
-//    public OperationSubstract(Strategy nextStrategy){
-//        this.nextStrategy = nextStrategy;
-//    }
+    public OperationSubstract(){}
+    
+    public OperationSubstract(OperationMultiply nextStrategy){
+        this.nextStrategy = nextStrategy;
+    }
     
     @Override
     public int doOperation(int num1, int num2) {

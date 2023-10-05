@@ -10,6 +10,12 @@ package GOF.DP_Lab5.Strategy.Calculator;
  * @author FA20-BSE-017
  */
 public class OperationDiv extends Computer{
+    
+    public OperationDiv(){}
+    
+    public OperationDiv(OperationPow nextStrategy){
+        this.nextStrategy = nextStrategy;
+    }
 
     @Override
     public int doOperation(int num1, int num2) {

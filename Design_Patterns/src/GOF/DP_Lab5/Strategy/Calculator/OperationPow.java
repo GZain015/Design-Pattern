@@ -12,6 +12,8 @@ package GOF.DP_Lab5.Strategy.Calculator;
 import java.math.*;
 
 public class OperationPow extends Computer{
+    
+    public OperationPow(){}
 
     @Override
     public int doOperation(int num1, int num2) {
