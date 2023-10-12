@@ -33,7 +33,10 @@ public class NetworksMain {
 
         System.out.println("\nChoose social network for posting message.\n" +
                 "1 - Facebook\n" +
-                "2 - Twitter");
+                "2 - Twitter" +
+                "3 - LinkedIn" 
+                
+        );
         int choice = Integer.parseInt(reader.readLine());
 
         // Create proper network object and send the message.
@@ -41,6 +44,8 @@ public class NetworksMain {
             network = new Facebook(userName, password);
         } else if (choice == 2) {
             network = new Twitter(userName, password);
+        } else if (choice == 3) {
+            network = new LinkedIn(userName, password);
         }
         network.post(message);
     }
