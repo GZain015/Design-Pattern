@@ -9,10 +9,10 @@ package GOF.DP_Lab6.TemplateMethod.Networks;
  * @author Zain
  */
 
-import GOF.DP_Lab6.TemplateMethod.Networks.Facebook;
-import GOF.DP_Lab6.TemplateMethod.Networks.Network;
-import GOF.DP_Lab6.TemplateMethod.Networks.Twitter;
-import GOF.DP_Lab6.TemplateMethod.Networks.LinkedIn;
+//import GOF.DP_Lab6.TemplateMethod.Networks.Facebook;
+//import GOF.DP_Lab6.TemplateMethod.Networks.Network;
+//import GOF.DP_Lab6.TemplateMethod.Networks.Twitter;
+//import GOF.DP_Lab6.TemplateMethod.Networks.LinkedIn;
 
 
 import java.io.BufferedReader;

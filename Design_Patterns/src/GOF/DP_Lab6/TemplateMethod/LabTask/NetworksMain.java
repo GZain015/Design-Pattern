@@ -16,63 +16,42 @@ package GOF.DP_Lab6.TemplateMethod.LabTask;
 //import GOF.DP_Lab6.TemplateMethod.LabTask.LinkedIn;
 //import GOF.DP_Lab6.TemplateMethod.LabTask.Message;
 
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class NetworksMain {
     public static void main(String[] args) throws IOException {
-       BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        GOF.DP_Lab6.TemplateMethod.Networks.Network network = null;
         System.out.print("Input user name: ");
         String userName = reader.readLine();
         System.out.print("Input password: ");
         String password = reader.readLine();
 
-        System.out.print("Input message description: ");
-        String description = reader.readLine();
+        // Enter the message.
+        System.out.print("Input message: ");
+        String message = reader.readLine();
 
-        System.out.println("Choose message type:\n1 - ERROR\n2 - WARNING\n3 - INFO");
-        int messageTypeChoice = Integer.parseInt(reader.readLine());
-        MessageType messageType = MessageType.ERROR; // Default
+        System.out.println("\nChoose social network for posting message.\n" +
+                "1 - Facebook\n" +
+                "2 - Twitter\n" +
+                "3 - LinkedIn" 
+                
+        );
+        int choice = Integer.parseInt(reader.readLine());
 
-        switch (messageTypeChoice) {
-            case 2:
-                messageType = MessageType.WARNING;
-                break;
-            case 3:
-                messageType = MessageType.INFO;
-                break;
+        // Create proper network object and send the message.
+        if (choice == 1) {
+            network = new GOF.DP_Lab6.TemplateMethod.Networks.Facebook(userName, password);
+        } else if (choice == 2) {
+            network = new GOF.DP_Lab6.TemplateMethod.Networks.Twitter(userName, password);
+        } else if (choice == 3) {
+            network = new GOF.DP_Lab6.TemplateMethod.Networks.LinkedIn(userName, password);
+        } else {
+            System.out.println("\nInvalid Option...");
         }
-
-        System.out.println("Choose network type:\n1 - Facebook\n2 - Twitter\n3 - LinkedIn");
-        int networkTypeChoice = Integer.parseInt(reader.readLine());
-        NetworkType networkType = NetworkType.NONE; // Default
-
-        switch (networkTypeChoice) {
-            case 1:
-                networkType = NetworkType.FACEBOOK;
-                break;
-            case 2:
-                networkType = NetworkType.TWITTER;
-                break;
-            case 3:
-                networkType = NetworkType.LINKEDIN;
-                break;
-        }
-
-        Message message = new Message(description, messageType, networkType);
-
-        Network[] networks = {new Facebook(userName, password), new Twitter(userName, password), new LinkedIn(userName, password)};
-
-        for (Network network : networks) {
-            if (message.getNetworkType() == NetworkType.NONE || message.getNetworkType() == network.getNetworkType()) {
-                if (network.post(message)) {
-                    System.out.println("Message sent successfully on " + network.getNetworkType());
-                } else {
-                    System.out.println("Failed to send message on " + network.getNetworkType());
-                }
-            }
-        }
+        network.post(message);
     }
 }

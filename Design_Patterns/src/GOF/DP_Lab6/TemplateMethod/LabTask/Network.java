@@ -43,9 +43,4 @@ public abstract class Network {
             ex.printStackTrace();
         }
     }
-
-    public NetworkType getNetworkType() {
-        NetworkType Network = null;
-        return Network;
-    }
 }
