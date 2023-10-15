@@ -12,6 +12,7 @@ package GOF.DP_Lab6.TemplateMethod.Networks;
 import GOF.DP_Lab6.TemplateMethod.Networks.Facebook;
 import GOF.DP_Lab6.TemplateMethod.Networks.Network;
 import GOF.DP_Lab6.TemplateMethod.Networks.Twitter;
+import GOF.DP_Lab6.TemplateMethod.Networks.LinkedIn;
 
 
 import java.io.BufferedReader;
@@ -33,7 +34,7 @@ public class NetworksMain {
 
         System.out.println("\nChoose social network for posting message.\n" +
                 "1 - Facebook\n" +
-                "2 - Twitter" +
+                "2 - Twitter\n" +
                 "3 - LinkedIn" 
                 
         );
@@ -46,6 +47,8 @@ public class NetworksMain {
             network = new Twitter(userName, password);
         } else if (choice == 3) {
             network = new LinkedIn(userName, password);
+        } else {
+            System.out.println("\nInvalid Option...");
         }
         network.post(message);
     }

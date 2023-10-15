@@ -2,15 +2,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package GOF.DP_Lab6.TemplateMethod.Networks;
+package GOF.DP_Lab6.TemplateMethod.LabTask;
+
+import GOF.DP_Lab6.TemplateMethod.LabTask.*;
 
 /**
  *
  * @author Zain
  */
-public class LinkedIn extends Network {
 
-    public LinkedIn(String userName, String password) {
+public class Twitter extends Network {
+    public Twitter(String userName, String password) {
         this.userName = userName;
         this.password = password;
     }
@@ -23,14 +25,14 @@ public class LinkedIn extends Network {
             System.out.print("*");
         }
         simulateNetworkLatency();
-        System.out.println("\n\nLogIn success on LinkedIn");
+        System.out.println("\n\nLogIn success on Twitter");
         return true;
     }
 
-    public boolean sendData(byte[] data) {
+    public boolean sendData(Message message) {
         boolean messagePosted = true;
         if (messagePosted) {
-            System.out.println("Message: '" + new String(data) + "' was posted on LinkedIn");
+            System.out.println("Message: '" + message.getDescription() + "' was posted on Twitter");
             return true;
         } else {
             return false;
@@ -38,20 +40,6 @@ public class LinkedIn extends Network {
     }
 
     public void logOut() {
-        System.out.println("User: '" + userName + "' was logged out from LinkedIn");
-    }
-
-    private void simulateNetworkLatency() {
-        try {
-            int i = 0;
-            System.out.println();
-            while (i < 10) {
-                System.out.print(".");
-                Thread.sleep(500);
-                i++;
-            }
-        } catch (InterruptedException ex) {
-            ex.printStackTrace();
-        }
+        System.out.println("User: '" + userName + "' was logged out from Twitter");
     }
 }
