@@ -83,7 +83,7 @@ public class NetworksMain {
             
             if (message.getNetworkType() == null) {
                 network = new Facebook(userName, password);
-                //network.post(message.getDescription());
+//                network.post(message.getDescription());
                 network.post(message);
                 network = new Twitter(userName, password);
                 network.post(message);
@@ -92,10 +92,13 @@ public class NetworksMain {
             } else {
                 if (networkTypeInput == "Facebook") {
                     network = new Facebook(userName, password);
+                    network.post(message);
                 } else if (networkTypeInput == "Twitter") {
                     network = new Twitter(userName, password);
+                    network.post(message);
                 } else if (networkTypeInput == "LinkedIn") {
                     network = new LinkedIn(userName, password);
+                    network.post(message);
                 }
             }
             
