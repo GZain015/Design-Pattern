@@ -9,10 +9,10 @@ package GOF.DP_Lab6.TemplateMethod.LabTask;
  * @author Zain
  */
 public enum NetworkType {
-    NONE,      // Represents no specific network
-    FACEBOOK,
-    TWITTER,
-    LINKEDIN
+    None,      // Represents no specific network
+    Facebook,
+    Twitter,
+    LinkedIn
 }
 
 
