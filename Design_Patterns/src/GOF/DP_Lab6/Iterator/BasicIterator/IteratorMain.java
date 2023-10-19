@@ -16,10 +16,11 @@ public class IteratorMain {
         Iterator iterator = nameRepository.getIterator();
         iterator.moveToLast();
 
-        System.out.println("Students with names starting from 'Muhammad':");
+//        System.out.println("Students with names starting from 'Muhammad':");
+        System.out.println("Students with names starting from 'Zain':");
         while (iterator.hasPrevious()) {
             Student student = (Student) iterator.previous();
-            if (student.getName().startsWith("Muhammad")) {
+            if (student.getName().startsWith("Zain")) {
                 System.out.println("Name: " + student.getName());
             }
         }
