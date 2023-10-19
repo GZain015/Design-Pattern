@@ -8,6 +8,8 @@ package GOF.DP_Lab5.Mediator.LabTask;
  *
  * @author Zain
  */
-public class Teacher {
-    
+public class Teacher extends User{
+    public Teacher(String name) {
+        super(name);
+    }
 }
