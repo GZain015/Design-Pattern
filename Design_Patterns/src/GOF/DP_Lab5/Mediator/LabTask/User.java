@@ -10,7 +10,7 @@ package GOF.DP_Lab5.Mediator.LabTask;
  *
  * @author FA20-BSE-017
  */
-public class User {
+public class User implements AbstractUser{
     private String name;
 
     public String getName() {
@@ -25,6 +25,7 @@ public class User {
        this.name  = name;
     }
 
+    @Override
     public void sendMessage(String message){
         ChatRoom.showMessage(this,message);
     }
