@@ -30,7 +30,7 @@ public class MediatorMain {
         
         
         ChatRoom.sendMessageToTarget(mAli, comsatsUniversity, "Hello, COMSATS University!");
-        ChatRoom.sendMessageToAll(mAli, List.of(comsatsUniversity, nustUniversity, teacherAli, ahmad, ali), "Hello, everyone!");
+//        ChatRoom.sendMessageToAll(mAli, List.of(comsatsUniversity, nustUniversity, teacherAli, ahmad, ali), "Hello, everyone!");
 
     }
 }
