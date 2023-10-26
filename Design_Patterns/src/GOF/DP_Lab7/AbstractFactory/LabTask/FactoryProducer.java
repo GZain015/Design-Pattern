@@ -17,6 +17,10 @@ public class FactoryProducer {
          return new RoundedShapeFactory();         
       }else if(Factory == "DoubleBordered"){
           return new DoubleBorderedShapeFactory();
+      }else if(Factory == "DoubleBorderedRounded"){
+         return new ShapeFactory();
+      }else if(Factory == "SingleBordered"){
+         return new ShapeFactory();
       }else if(Factory == "Simple"){
          return new ShapeFactory();
       }
