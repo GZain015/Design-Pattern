@@ -10,6 +10,7 @@ package GOF.DP_Lab7.AbstractFactory.LabTask;
  *
  * @author fa20-bse-017
  */
+
 public class AbstractFactoryMain {
     public static void main(String[] args) {
       //get shape factory
