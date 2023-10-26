@@ -16,7 +16,9 @@ public class DoubleBorderedShapeFactory extends AbstractFactory {
       if(shapeType.equalsIgnoreCase("RECTANGLE")){
          return new DoubleBorderedRectangle();         
       }else if(shapeType.equalsIgnoreCase("SQUARE")){
-         return new DoubleBorderedSquare();
+         return new DoubleBorderedSquare();	 
+      }else if(shapeType.equalsIgnoreCase("TRIANGLE")){
+         return new DoubleBorderedTriangle();
       }	 
       return null;
    }

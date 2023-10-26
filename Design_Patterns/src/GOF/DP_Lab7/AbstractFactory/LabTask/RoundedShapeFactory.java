@@ -18,7 +18,7 @@ public class RoundedShapeFactory extends AbstractFactory {
       }else if(shapeType.equalsIgnoreCase("SQUARE")){
          return new RoundedSquare(); 
       }else if(shapeType.equalsIgnoreCase("TRIANGLE")){
-         return new RoundedSquare();
+         return new RoundedTriangle();
       }	 
       return null;
    }

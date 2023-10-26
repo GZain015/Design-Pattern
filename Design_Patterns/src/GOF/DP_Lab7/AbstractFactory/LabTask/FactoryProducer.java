@@ -19,9 +19,12 @@ public class FactoryProducer {
           return new DoubleBorderedShapeFactory();
       }else if(Factory == "Simple"){
          return new ShapeFactory();
-      }else{
-         return new ShapeFactory();
       }
+      
+      return null;
+//      }else{
+//         return new ShapeFactory();
+//      }
    }
    
 //   public AbstractFactory getFactory(){
