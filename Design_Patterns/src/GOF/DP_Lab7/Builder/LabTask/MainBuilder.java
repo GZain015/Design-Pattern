@@ -29,5 +29,10 @@ public class MainBuilder {
       System.out.println("\n\nDiet Meal");
       dietMeal.showItems();
       System.out.println("Total Cost: " + dietMeal.getCost());
+      
+      Meal tea = mealBuilder.prepareTea();
+      System.out.println("\n\nTea");
+      tea.showItems();
+      System.out.println("Total Cost: " + tea.getCost());
    }
 }

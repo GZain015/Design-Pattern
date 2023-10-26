@@ -12,5 +12,6 @@ package GOF.DP_Lab7.Builder.LabTask;
 public interface Item {
    public String name();
    public Packing packing();
-   public float price();	
+   public float price();
+
 }

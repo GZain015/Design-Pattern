@@ -19,4 +19,6 @@ public abstract class HotDrink implements Item {
 
 	@Override
 	public abstract float price();
+        
+        public void addToppings(){};
 }

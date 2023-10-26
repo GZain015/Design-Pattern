@@ -32,4 +32,10 @@ public class MealBuilder {
       meal.addItem(new SugerFreePepsi());
       return meal;
    }
+
+   public Meal prepareTea (){
+      Meal meal = new Meal();
+      meal.addItem(new Tea());
+      return meal;
+   }
 }

@@ -9,7 +9,7 @@ package GOF.DP_Lab7.Builder.LabTask;
  *
  * @author fa20-bse-017
  */
-public class Tea extends ColdDrink {
+public class Tea extends HotDrink {
 
    @Override
    public float price() {
@@ -19,5 +19,10 @@ public class Tea extends ColdDrink {
    @Override
    public String name() {
       return "Tea";
+   }
+   
+   @Override
+   public void addToppings(){
+       
    }
 }
