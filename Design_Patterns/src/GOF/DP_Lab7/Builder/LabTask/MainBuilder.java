@@ -35,28 +35,38 @@ public class MainBuilder {
                     Meal vegMeal = mealBuilder.prepareVegMeal();
                     System.out.println("Veg Meal");
                     vegMeal.showItems();
-                    System.out.println("Total Cost: " + vegMeal.getCost());
+                    System.out.println("\nTotal Cost: " + vegMeal.getCost());
                     break;
                 case 2:
                     Meal nonVegMeal = mealBuilder.prepareNonVegMeal();
                     System.out.println("\n\nNon-Veg Meal");
                     nonVegMeal.showItems();
-                    System.out.println("Total Cost: " + nonVegMeal.getCost());
+                    System.out.println("\nTotal Cost: " + nonVegMeal.getCost());
                     break;
                 case 3:
                     Meal dietMeal = mealBuilder.prepareDietMeal();
                     System.out.println("\n\nDiet Meal");
                     dietMeal.showItems();
-                    System.out.println("Total Cost: " + dietMeal.getCost());
+                    System.out.println("\nTotal Cost: " + dietMeal.getCost());
                     break;
                 case 4:
-                    Meal tea = mealBuilder.prepareTea();
                     System.out.println("\n\nTea");
-                    tea.showItems();
-                    System.out.println("Total Cost: " + tea.getCost());
+                    System.out.println("\nDo you want to add Toppings? [y/n]");
+                    String ch1= sc.nextLine();
+                    if(ch1 == "Y" || ch1 == "y"){
+                        Meal tea = mealBuilder.prepareTea();
+                        tea.showItems();
+                        System.out.println("\nTotal Cost: " + tea.getCost());
+
+                    }else{
+                        Meal tea = mealBuilder.prepareTea();
+                        tea.showItems();
+                        System.out.println("\nTotal Cost: " + tea.getCost());
+                    }
                     break;
                 case 5:
                     System.out.println("\nThanks for visiting us....");
+                    sc.close();
                     System.exit(0);
                     break;
                 default:
