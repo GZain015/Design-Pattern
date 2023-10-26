@@ -25,4 +25,11 @@ public class MealBuilder {
       meal.addItem(new Pepsi());
       return meal;
    }
+
+   public Meal prepareDietVegMeal (){
+      Meal meal = new Meal();
+      meal.addItem(new ChickenBurger());
+      meal.addItem(new SugerFreePepsi());
+      return meal;
+   }
 }

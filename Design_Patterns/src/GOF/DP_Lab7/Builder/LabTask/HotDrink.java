@@ -10,11 +10,11 @@ package GOF.DP_Lab7.Builder.LabTask;
  *
  * @author fa20-bse-017
  */
-public abstract class ColdDrink implements Item {
+public abstract class HotDrink implements Item {
 
 	@Override
 	public Packing packing() {
-            return new Bottle();
+            return new DisposibleCup();
 	}
 
 	@Override

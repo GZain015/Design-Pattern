@@ -5,18 +5,19 @@
  */
 package GOF.DP_Lab7.Builder.LabTask;
 
-
 /**
  *
  * @author fa20-bse-017
  */
-public abstract class ColdDrink implements Item {
+public class SugerFreePepsi extends ColdDrink {
 
-	@Override
-	public Packing packing() {
-            return new Bottle();
-	}
+   @Override
+   public float price() {
+      return 40.0f;
+   }
 
-	@Override
-	public abstract float price();
+   @Override
+   public String name() {
+      return "SugerFreePepsi";
+   }
 }
