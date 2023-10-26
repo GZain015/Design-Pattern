@@ -26,9 +26,9 @@ public class MealBuilder {
       return meal;
    }
 
-   public Meal prepareDietVegMeal (){
+   public Meal prepareDietMeal (){
       Meal meal = new Meal();
-      meal.addItem(new ChickenBurger());
+      meal.addItem(new DietBurger());
       meal.addItem(new SugerFreePepsi());
       return meal;
    }

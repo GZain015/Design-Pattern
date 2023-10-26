@@ -39,7 +39,7 @@ public class AbstractFactoryMain {
       //call draw method of Shape Square
       shape5.draw();
       //get an object of Shape Square 
-      Shape shape6 = shapeFactory.getShape("TRIANGLE");
+      Shape shape6 = shapeFactory1.getShape("TRIANGLE");
       //call draw method of Shape Square
       shape6.draw();
       ///get shape factory
@@ -53,7 +53,7 @@ public class AbstractFactoryMain {
       //call draw method of Shape Square
       shape8.draw();
       //get an object of Shape Square 
-      Shape shape9 = shapeFactory.getShape("TRIANGLE");
+      Shape shape9 = shapeFactory2.getShape("TRIANGLE");
       //call draw method of Shape Square
       shape9.draw();
    }

@@ -14,7 +14,7 @@ public class DietBurger extends Burger {
 
    @Override
    public float price() {
-      return 50.5f;
+      return 45.5f;
    }
 
    @Override

@@ -24,5 +24,10 @@ public class MainBuilder {
       System.out.println("\n\nNon-Veg Meal");
       nonVegMeal.showItems();
       System.out.println("Total Cost: " + nonVegMeal.getCost());
+      
+      Meal dietMeal = mealBuilder.prepareDietMeal();
+      System.out.println("\n\nDiet Meal");
+      dietMeal.showItems();
+      System.out.println("Total Cost: " + dietMeal.getCost());
    }
 }
