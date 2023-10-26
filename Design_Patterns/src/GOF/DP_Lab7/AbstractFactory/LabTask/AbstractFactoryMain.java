@@ -23,28 +23,38 @@ public class AbstractFactoryMain {
       Shape shape2 = shapeFactory.getShape("SQUARE");
       //call draw method of Shape Square
       shape2.draw();
+      //get an object of Shape Square 
+      Shape shape3 = shapeFactory.getShape("TRIANGLE");
+      //call draw method of Shape Square
+      shape3.draw();
       //get shape factory
 //      AbstractFactory shapeFactory1 = FactoryProducer.getFactory(true);
       AbstractFactory shapeFactory1 = FactoryProducer.getFactory("DoubleBordered");
       //get an object of Shape Rectangle
-      Shape shape3 = shapeFactory1.getShape("RECTANGLE");
+      Shape shape4 = shapeFactory1.getShape("RECTANGLE");
       //call draw method of Shape Rectangle
-      shape3.draw();
-      //get an object of Shape Square 
-      Shape shape4 = shapeFactory1.getShape("SQUARE");
-      //call draw method of Shape Square
       shape4.draw();
-      
+      //get an object of Shape Square 
+      Shape shape5 = shapeFactory1.getShape("SQUARE");
+      //call draw method of Shape Square
+      shape5.draw();
+      //get an object of Shape Square 
+      Shape shape6 = shapeFactory.getShape("TRIANGLE");
+      //call draw method of Shape Square
+      shape6.draw();
       ///get shape factory
       AbstractFactory shapeFactory2 = FactoryProducer.getFactory("Simple");
       //get an object of Shape Rectangle
-      Shape shape5 = shapeFactory2.getShape("RECTANGLE");
+      Shape shape7 = shapeFactory2.getShape("RECTANGLE");
       //call draw method of Shape Rectangle
-      shape5.draw();
+      shape7.draw();
       //get an object of Shape Square 
-      Shape shape6 = shapeFactory2.getShape("SQUARE");
+      Shape shape8 = shapeFactory2.getShape("SQUARE");
       //call draw method of Shape Square
-      shape6.draw();
-      
+      shape8.draw();
+      //get an object of Shape Square 
+      Shape shape9 = shapeFactory.getShape("TRIANGLE");
+      //call draw method of Shape Square
+      shape9.draw();
    }
 }
