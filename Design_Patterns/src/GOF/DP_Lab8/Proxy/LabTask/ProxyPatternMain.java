@@ -21,7 +21,7 @@ public class ProxyPatternMain {
         //image will not be loaded from disk
         image.display(); 	
 
-        Exam virtualProxyExam = new VirtualProxyExam();
+        Exam virtualProxyExam = new RemoteProxyExam();
 
         virtualProxyExam.load();
 

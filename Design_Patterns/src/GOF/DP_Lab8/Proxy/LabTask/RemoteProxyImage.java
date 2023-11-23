@@ -9,12 +9,12 @@ package GOF.DP_Lab8.Proxy.LabTask;
  *
  * @author FA20-BSE-017
  */
-public class VirtualProxyImage implements Image {
+public class RemoteProxyImage implements Image {
 
    private RealImage realImage;
    private String fileName;
 
-   public VirtualProxyImage(String fileName) {
+   public RemoteProxyImage(String fileName) {
       this.fileName = fileName;
    }
 
