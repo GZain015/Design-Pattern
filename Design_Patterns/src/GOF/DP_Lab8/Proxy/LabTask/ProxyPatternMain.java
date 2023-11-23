@@ -11,14 +11,28 @@ package GOF.DP_Lab8.Proxy.LabTask;
  */
 public class ProxyPatternMain {
 	
-   public static void main(String[] args) {
-      Image image = new ProxyImage("test_10mb.jpg");
+    public static void main(String[] args) {
+        Image image = new ProxyImage("test_10mb.jpg");
 
-      //image will be loaded from disk
-      image.display(); 
-      System.out.println("");
+        //image will be loaded from disk
+        image.display(); 
+        System.out.println("");
+
+        //image will not be loaded from disk
+        image.display(); 	
+
+        Exam virtualProxyExam = new VirtualProxyExam();
+
+        virtualProxyExam.load();
+
+        virtualProxyExam.displayResults("student123");
+
+        Exam protectedProxyExam = new ProtectedProxyExam("teacher");
+
+        protectedProxyExam.load();
+        
+        protectedProxyExam.displayResults("anyStudentId");
+
       
-      //image will not be loaded from disk
-      image.display(); 	
    }
 }
