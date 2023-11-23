@@ -27,11 +27,12 @@ public class ProxyPatternMain {
 
         virtualProxyExam.displayResults("Fa20-bse-017");
 
-        Exam protectedProxyExam = new ProtectedProxyExam("teacher");
+        Exam protectedProxyExam = new ProtectedProxyExam("Sir Mukhtiyar Zamin");
 
         protectedProxyExam.load();
         
-        protectedProxyExam.displayResults("anyStudentId");
+//        protectedProxyExam.displayResults("anyStudentId");
+        protectedProxyExam.displayResults("StudentId");
 
       
    }
