@@ -25,7 +25,7 @@ public class ProxyPatternMain {
 
         virtualProxyExam.load();
 
-        virtualProxyExam.displayResults("student123");
+        virtualProxyExam.displayResults("Fa20-bse-017");
 
         Exam protectedProxyExam = new ProtectedProxyExam("teacher");
 
