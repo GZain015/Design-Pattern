@@ -1,52 +1,37 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package GOF.DP_Lab9.Composite.LabTask;
 
-
 /**
  *
- * @author fa20-bse-017
+ * @author Zain
  */
 public class EmployeeMain {
     public static void main(String[] args) {
-   
-      
-      Employee Director = new Employee("Zain","Director", 30000);
+        Director director = new Director("Prof. Maroof Shah (Director)", 10000);
+        HOD hod1 = new HOD("Prof. Mazhar (HOD)", 8000);
+        HOD hod2 = new HOD("Prof. Ahmad (HOD)", 7500);
+        Teacher teacher1 = new Teacher("Mukhtiyar Zamin (Teacher)", 5000);
+        Teacher teacher2 = new Teacher("Fuzail Jameel (Teacher)", 5500);
+        DOO doo = new DOO("Imran Ali (DOO)", 7000);
 
-      Employee hod = new Employee("Qazi","Head of Department", 20000);
+        director.addSubordinate(hod1);
+        director.addSubordinate(hod2);
+        hod1.addSubordinate(teacher1);
+        hod2.addSubordinate(teacher2);
+        director.addSubordinate(doo);
+        
+        
 
-      Employee doo = new Employee("Hamza","DOO", 20000);
-      
-      Employee registerar = new Employee("Hamza","Administration", 20000);
+        EmployeeController controller = new EmployeeController();
+        String organogram = controller.generateOrganogram(director);
 
-      Employee clerk1 = new Employee("Babu","Marketing", 10000);
-      Employee clerk2 = new Employee("Abdur Rehman","Marketing", 10000);
-
-      Employee salesExecutive1 = new Employee("Asim","Sales", 10000);
-      Employee salesExecutive2 = new Employee("Asad","Sales", 10000);
-
-      Director.add(hod);
-      Director.add(doo);
-      Director.add(registerar);
-
-      hod.add(salesExecutive1);
-      hod.add(salesExecutive2);
-
-      doo.add(clerk1);
-      doo.add(clerk2);
-
-      //print all employees of the organization
-      System.out.println(Director); 
-      
-      for (Employee headEmployee : Director.getSubordinates()) {
-         System.out.println(headEmployee);
-         
-         for (Employee employee : headEmployee.getSubordinates()) {
-            System.out.println(employee);
-         }
-      }		
+        System.out.println("Organization Hierarchy:");
+        System.out.println(organogram);
+        
+        director.giveBonus(2000);
+        doo.giveBonus(2000);
     }
 }
