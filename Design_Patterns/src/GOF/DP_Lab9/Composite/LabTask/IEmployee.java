@@ -9,11 +9,13 @@ package GOF.DP_Lab9.Composite.LabTask;
  * @author Zain
  */
 
-import java.util.ArrayList;
-import java.util.List;
+//import java.util.ArrayList;
+//import java.util.List;
+import java.util.*;
 
 interface IEmployee {
     void giveBonus(double bonus);
     double calculateSalary();
-    List<IEmployee> getSubordinates();
+//    List<IEmployee> getSubordinates();
+    Iterable<IEmployee> getSubordinates();
 }

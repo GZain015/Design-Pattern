@@ -9,8 +9,9 @@ package GOF.DP_Lab9.Composite.LabTask;
  * @author Zain
  */
 
-import java.util.ArrayList;
-import java.util.List;
+//import java.util.ArrayList;
+//import java.util.List;
+import java.util.*;
 
 
 class BaseEmployee implements IEmployee {
@@ -26,7 +27,7 @@ class BaseEmployee implements IEmployee {
 
     public void giveBonus(double bonus) {
         this.salary += bonus;
-        System.out.println(this.name + " received a bonus of $" + bonus + ". New salary: $" + this.salary);
+        System.out.println(this.name + " received a bonus of " + bonus + ". New salary: " + this.salary);
     }
 
     public double calculateSalary() {
@@ -37,7 +38,7 @@ class BaseEmployee implements IEmployee {
         this.subordinates.add(employee);
     }
 
-    public List<IEmployee> getSubordinates() {
+    public Iterable<IEmployee> getSubordinates() {
         return this.subordinates;
     }
 }
