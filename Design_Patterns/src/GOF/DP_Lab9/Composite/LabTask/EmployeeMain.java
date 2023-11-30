@@ -13,11 +13,14 @@ package GOF.DP_Lab9.Composite.LabTask;
 public class EmployeeMain {
     public static void main(String[] args) {
    
-      Employee CEO = new Employee("Zain","CEO", 30000);
+      
+      Employee Director = new Employee("Zain","Director", 30000);
 
-      Employee headSales = new Employee("Qazi","Head Sales", 20000);
+      Employee hod = new Employee("Qazi","Head of Department", 20000);
 
-      Employee headMarketing = new Employee("Hamza","Head Marketing", 20000);
+      Employee doo = new Employee("Hamza","DOO", 20000);
+      
+      Employee registerar = new Employee("Hamza","Administration", 20000);
 
       Employee clerk1 = new Employee("Babu","Marketing", 10000);
       Employee clerk2 = new Employee("Abdur Rehman","Marketing", 10000);
@@ -25,19 +28,20 @@ public class EmployeeMain {
       Employee salesExecutive1 = new Employee("Asim","Sales", 10000);
       Employee salesExecutive2 = new Employee("Asad","Sales", 10000);
 
-      CEO.add(headSales);
-      CEO.add(headMarketing);
+      Director.add(hod);
+      Director.add(doo);
+      Director.add(registerar);
 
-      headSales.add(salesExecutive1);
-      headSales.add(salesExecutive2);
+      hod.add(salesExecutive1);
+      hod.add(salesExecutive2);
 
-      headMarketing.add(clerk1);
-      headMarketing.add(clerk2);
+      doo.add(clerk1);
+      doo.add(clerk2);
 
       //print all employees of the organization
-      System.out.println(CEO); 
+      System.out.println(Director); 
       
-      for (Employee headEmployee : CEO.getSubordinates()) {
+      for (Employee headEmployee : Director.getSubordinates()) {
          System.out.println(headEmployee);
          
          for (Employee employee : headEmployee.getSubordinates()) {
