@@ -48,6 +48,13 @@ public class EmployeeMain {
             hod1.addSubordinate(teacher1);
             hod2.addSubordinate(teacher2);
             director.addSubordinate(doo);
+            
+            EmployeeController controller = new EmployeeController();
+            String organogram = controller.generateOrganogram(director);
+
+            System.out.println("Organization Hierarchy:");
+            System.out.println(organogram);
+            System.out.println();
 
             // Giving a bonus to all employees using Iterator
             giveBonusToAllEmployees(director);
