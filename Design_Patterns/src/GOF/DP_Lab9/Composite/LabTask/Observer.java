@@ -9,12 +9,6 @@ package GOF.DP_Lab9.Composite.LabTask;
  * @author Zain
  */
 
-//import java.util.ArrayList;
-//import java.util.List;
-import java.util.*;
-
-interface IEmployee extends Observer {
-    void giveBonus(double bonus);
-    double calculateSalary();
-    Iterable<IEmployee> getSubordinates(); // Iterable for subordinates
+interface Observer {
+    void update(double bonus);
 }

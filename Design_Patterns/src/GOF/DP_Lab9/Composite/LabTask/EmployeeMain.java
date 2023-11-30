@@ -66,9 +66,12 @@ public class EmployeeMain {
 
         while (!queue.isEmpty()) {
             IEmployee currentEmployee = queue.poll();
-            currentEmployee.giveBonus(1000); // Giving a bonus of $1000 to each employee
+            
+            //10% bouns to all
+            double bonus = 0.10;
+            currentEmployee.giveBonus(bonus);
+//            currentEmployee.giveBonus(1000);
 
-            // Add subordinates to the queue for traversal
             for (IEmployee subordinate : currentEmployee.getSubordinates()) {
                 queue.offer(subordinate);
             }
