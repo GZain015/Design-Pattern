@@ -36,12 +36,12 @@ public class ForestMain {
             
             forest.plantTree(random(0, CANVAS_SIZE), random(0, CANVAS_SIZE),
 //                    "Summer Oak", color, "Oak texture stub", isFruitTree, 6);
-                    "Summer Oak", color, "Oak texture stub", true, 6);
+                    "Summer Oak", color, "Oak texture stub", true, 26);
 
             forest.plantTree(random(0, CANVAS_SIZE), random(0, CANVAS_SIZE),
-                    "Autumn Oak", color, "Autumn Oak texture stub", false, 3);
+                    "Autumn Oak", color, "Autumn Oak texture stub", false, 30);
             forest.plantTree(random(0, CANVAS_SIZE), random(0, CANVAS_SIZE),
-                    "Winter Oak", color, "Winter Oak texture stub", false, 0);
+                    "Winter Oak", color, "Winter Oak texture stub", false, 10);
         }
 
         forest.setSize(CANVAS_SIZE, CANVAS_SIZE);
