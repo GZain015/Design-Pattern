@@ -27,19 +27,21 @@ public class ForestMain {
         // Planting trees in different locations with varying characteristics
         for (int i = 0; i < Math.floor(TREES_TO_DRAW / TREE_TYPES); i++) {
             // Varying tree sizes based on location
-            int treeSize = getTreeSize(i);
+//            int treeSize = getTreeSize(i);
+//            int treeSize = 6;
             
             // Planting fruit trees with different colors
             Color color = getColorBasedOnLocation(i);
-            boolean isFruitTree = i % 2 == 0; // Alternate trees are fruit trees
+//            boolean isFruitTree = i % 2 == 0; // Alternate trees are fruit trees
             
             forest.plantTree(random(0, CANVAS_SIZE), random(0, CANVAS_SIZE),
-                    "Summer Oak", color, "Oak texture stub", isFruitTree, treeSize);
+//                    "Summer Oak", color, "Oak texture stub", isFruitTree, 6);
+                    "Summer Oak", color, "Oak texture stub", true, 6);
 
             forest.plantTree(random(0, CANVAS_SIZE), random(0, CANVAS_SIZE),
-                    "Autumn Oak", color, "Autumn Oak texture stub", isFruitTree, treeSize);
+                    "Autumn Oak", color, "Autumn Oak texture stub", false, 3);
             forest.plantTree(random(0, CANVAS_SIZE), random(0, CANVAS_SIZE),
-                    "Winter Oak", color, "Winter Oak texture stub", isFruitTree, treeSize);
+                    "Winter Oak", color, "Winter Oak texture stub", false, 0);
         }
 
         forest.setSize(CANVAS_SIZE, CANVAS_SIZE);
@@ -54,17 +56,6 @@ public class ForestMain {
         System.out.println("---------------------");
         System.out.println("Total: " + ((TREES_TO_DRAW * 8 + TREE_TYPES * 30) / 1024 / 1024) +
                 "MB (instead of " + ((TREES_TO_DRAW * 38) / 1024 / 1024) + "MB)");
-    }
-
-    // Function to generate tree sizes based on location
-    private static int getTreeSize(int index) {
-        if (index < TREES_TO_DRAW / 3) {
-            return 5; // Small trees in the North
-        } else if (index < 2 * TREES_TO_DRAW / 3) {
-            return 10; // Medium trees in the Middle
-        } else {
-            return 15; // Large trees in the South
-        }
     }
 
     // Function to generate colors based on location for fruit trees
