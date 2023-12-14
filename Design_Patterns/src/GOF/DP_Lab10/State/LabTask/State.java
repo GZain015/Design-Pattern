@@ -9,10 +9,15 @@ package GOF.DP_Lab10.State.LabTask;
  *
  * @author fa20-bse-017
  */
-public class StateMain {
-    public static void main(String[] args) {
-        Player player = new Player();
-        UI ui = new UI(player);
-        ui.init();
+abstract class State {
+    Player player;
+
+    State(Player player) {
+        this.player = player;
     }
+
+    public abstract String onLock();
+    public abstract String onPlay();
+    public abstract String onNext();
+    public abstract String onPrevious();
 }

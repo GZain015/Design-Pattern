@@ -3,16 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package GOF.DP_Lab10.State.LabTask;
+package GOF.DP_Lab11.Interpreter.LabTask;
 
 /**
  *
  * @author fa20-bse-017
  */
-public class StateMain {
-    public static void main(String[] args) {
-        Player player = new Player();
-        UI ui = new UI(player);
-        ui.init();
-    }
+public interface Expression {
+   public boolean interpret(String context);
 }
