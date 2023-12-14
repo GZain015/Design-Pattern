@@ -3,13 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package GOF.DP_Lab11.Momento.LabTask;
+package GOF.DP_Lab11.Momento.LabTask.ShapesGen;
 
 /**
  *
  * @author fa20-bse-017
  */
-public interface Command {
-    String getName();
-    void execute();
+public class Canvas {
+    
 }

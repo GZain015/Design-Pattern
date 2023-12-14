@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package GOF.DP_Lab11.Momento.LabTask;
+package GOF.DP_Lab11.Momento.LabTask.ShapesGen;
 
 /**
  *
@@ -124,6 +124,5 @@ public abstract class BaseShape implements Shape {
             disableSelectionStyle(graphics);
         }
 
-        // ...
     }
 }
