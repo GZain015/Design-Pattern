@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/Assignments/DP%20Asgn2/DP_Asgn2/src/Asgn2/EasyPaisaPaymentStrategy.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/Assignments/DP%20Asgn2/DP_Asgn2/src/Asgn2/UserSessionManager.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/Assignments/DP%20Asgn2/DP_Asgn2/src/Asgn2/PaymentStrategy.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/Assignments/DP%20Asgn2/DP_Asgn2/src/Asgn2/DocumentProcessor.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/Assignments/DP%20Asgn2/DP_Asgn2/src/Asgn2/EmailNotificationObserver.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/Assignments/DP%20Asgn2/DP_Asgn2/src/Asgn2/Request.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/Assignments/DP%20Asgn2/DP_Asgn2/src/Asgn2/Content.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/Assignments/DP%20Asgn2/DP_Asgn2/src/Asgn2/RequestManager.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/Assignments/DP%20Asgn2/DP_Asgn2/src/Asgn2/CreditCardPaymentStrategy.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/Assignments/DP%20Asgn2/DP_Asgn2/src/Asgn2/WordDocumentProcessor.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/Assignments/DP%20Asgn2/DP_Asgn2/src/Asgn2/SMSNotificationObserver.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/Assignments/DP%20Asgn2/DP_Asgn2/src/Asgn2/WebApplicationFacade.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/Assignments/DP%20Asgn2/DP_Asgn2/src/Asgn2/Subject.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/Assignments/DP%20Asgn2/DP_Asgn2/src/Asgn2/OrderSubject.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/Assignments/DP%20Asgn2/DP_Asgn2/src/Asgn2/TLS_Main.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/Assignments/DP%20Asgn2/DP_Asgn2/src/Asgn2/PaymentContext.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/Assignments/DP%20Asgn2/DP_Asgn2/src/Asgn2/Observer.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/Assignments/DP%20Asgn2/DP_Asgn2/src/Asgn2/User.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/Assignments/DP%20Asgn2/DP_Asgn2/src/Asgn2/Document.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/Assignments/DP%20Asgn2/DP_Asgn2/src/Asgn2/PDFDocumentProcessor.java</file>
+        </group>
+    </open-files>
+</project-private>
