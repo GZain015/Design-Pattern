@@ -13,9 +13,12 @@ package Asgn2;
 public class TLS_Main {
     public static void main(String[] args) {
         WebApplicationFacade webAppFacade = new WebApplicationFacade();
+        UserSessionManager usession = new UserSessionManager();
+
         webAppFacade.startWebApplication();
 
         User user = new User("Ghulam_Zain");
+        usession.startSession(user);
         webAppFacade.handleRequest(new Request("123", "GET", "Some data"));
 
         System.out.println();
@@ -28,6 +31,11 @@ public class TLS_Main {
         
         webAppFacade.placeOrder();
         webAppFacade.processPayment(100.0);
+        
+        
+        System.out.println();
+        
+        usession.getUser();
 
         webAppFacade.setPaymentStrategy(easypaisaPaymentStrategy);
         
@@ -48,6 +56,8 @@ public class TLS_Main {
         webAppFacade.processWordDocument(wordDocument);
         
         System.out.println();
+        
+        usession.endSession();
 
         webAppFacade.stopWebApplication();
     }
