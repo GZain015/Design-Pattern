@@ -9,7 +9,21 @@ package labfinal;
  * @author Zain
  */
 public class AdmissionSystemMain {
-   public static void main(String[] args) {
+   private AdmissionSubsystem admissionSubsystem;
+    private AdmissionSystemSubject admissionSystemSubject;
+
+    public AdmissionSystemMainissionSubsystem admissionSubsystem, AdmissionSystemSubject admissionSystemSubject) {
+        this.admissionSubsystem = admissionSubsystem;
+        this.admissionSystemSubject = admissionSystemSubject;
+    }
+
+    public void runAllClasses() {
+        System.out.println("Running all classes...");
+        admissionSubsystem.handleAdmission();
+        admissionSystemSubject.notifyObservers();
+    }
+
+    public static void main(String[] args) {
         // Create instances of AdmissionStrategy
         AdmissionStrategy quotaBased = new QuotaBasedAdmission();
         AdmissionStrategy meritBased = new MeritBasedAdmission();
@@ -64,17 +78,4 @@ public class AdmissionSystemMain {
         admissionSystem.runAllClasses();
     }
 
-    private AdmissionSubsystem admissionSubsystem;
-    private AdmissionSystemSubject admissionSystemSubject;
-
-    public AdmissionSystem(AdmissionSubsystem admissionSubsystem, AdmissionSystemSubject admissionSystemSubject) {
-        this.admissionSubsystem = admissionSubsystem;
-        this.admissionSystemSubject = admissionSystemSubject;
-    }
-
-    public void runAllClasses() {
-        // You can run methods or perform actions involving all classes here
-        admissionSubsystem.handleAdmission();
-        admissionSystemSubject.notifyObservers();
-    }
 }
