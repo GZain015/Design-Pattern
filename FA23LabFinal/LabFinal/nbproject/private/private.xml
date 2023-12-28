@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/FA23%20Lab%20Final%20Admission/LabFinal/src/labfinal/QuotaBasedAdmission.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/FA23%20Lab%20Final%20Admission/LabFinal/src/labfinal/Teacher.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/FA23%20Lab%20Final%20Admission/LabFinal/src/labfinal/Admin.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/FA23%20Lab%20Final%20Admission/LabFinal/src/labfinal/AdmissionStrategyContext.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/FA23%20Lab%20Final%20Admission/LabFinal/src/labfinal/AdmissionIterator.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/FA23%20Lab%20Final%20Admission/LabFinal/src/labfinal/ConcreteAdmissionIterator.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/FA23%20Lab%20Final%20Admission/LabFinal/src/labfinal/AdmissionSystemMain.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/FA23%20Lab%20Final%20Admission/LabFinal/src/labfinal/AdmissionObserver.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/FA23%20Lab%20Final%20Admission/LabFinal/src/labfinal/Parents.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/FA23%20Lab%20Final%20Admission/LabFinal/src/labfinal/AdmissionSystemSubject.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/FA23%20Lab%20Final%20Admission/LabFinal/src/labfinal/MeritBasedAdmission.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/FA23%20Lab%20Final%20Admission/LabFinal/src/labfinal/Students.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/FA23%20Lab%20Final%20Admission/LabFinal/src/labfinal/AdmissionStrategy.java</file>
+            <file>file:/C:/Users/Zain/Desktop/Project/Uni%20work/Lab/Design-Patterns/FA23%20Lab%20Final%20Admission/LabFinal/src/labfinal/AdmissionSubsystem.java</file>
+        </group>
+    </open-files>
+</project-private>
