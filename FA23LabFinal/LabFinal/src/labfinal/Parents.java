@@ -11,6 +11,6 @@ package labfinal;
 class Parents implements AdmissionObserver {
     @Override
     public void update() {
-        // Implementation for Parents update
+        System.out.println("Parents: Received update");
     }
 }

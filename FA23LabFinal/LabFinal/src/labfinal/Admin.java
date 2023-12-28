@@ -11,6 +11,6 @@ package labfinal;
 class Admin implements AdmissionObserver {
     @Override
     public void update() {
-        // Implementation for Admin update
+        System.out.println("Admin: Received update");
     }
 }

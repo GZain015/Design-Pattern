@@ -11,6 +11,6 @@ package labfinal;
 class MeritBasedAdmission implements AdmissionStrategy {
     @Override
     public void applyAdmissionStrategy() {
-        // Implementation for Merit-based Admission
+        System.out.println("Applying Merit-based Admission Strategy");
     }
 }

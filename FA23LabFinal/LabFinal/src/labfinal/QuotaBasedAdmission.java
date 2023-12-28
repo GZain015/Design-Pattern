@@ -11,6 +11,6 @@ package labfinal;
 class QuotaBasedAdmission implements AdmissionStrategy {
     @Override
     public void applyAdmissionStrategy() {
-        // Implementation for Quota-based Admission
+        System.out.println("Applying Quota-based Admission Strategy");
     }
 }
