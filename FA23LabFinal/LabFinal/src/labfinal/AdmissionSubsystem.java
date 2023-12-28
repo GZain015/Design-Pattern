@@ -15,5 +15,8 @@ class AdmissionSubsystem {
         this.strategyContext = strategyContext;
     }
 
-    // Other methods and implementation
+    public void handleAdmission() {
+        System.out.println("Admission Subsystem: Handling admission");
+        strategyContext.executeAdmissionStrategy();
+    }
 }

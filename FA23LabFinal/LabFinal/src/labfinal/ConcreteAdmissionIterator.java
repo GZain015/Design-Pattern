@@ -11,24 +11,23 @@ package labfinal;
 class ConcreteAdmissionIterator implements AdmissionIterator {
     @Override
     public void first() {
-        // Implementation for first
+        System.out.println("Admission Iterator: First item");
     }
 
     @Override
     public void next() {
-        // Implementation for next
+        System.out.println("Admission Iterator: Next item");
     }
 
     @Override
     public boolean isDone() {
-        // Implementation for isDone
+        System.out.println("Admission Iterator: Checking if done");
         return false;
     }
 
     @Override
     public Object currentItem() {
-        // Implementation for currentItem
+        System.out.println("Admission Iterator: Current item");
         return null;
     }
 }
-
